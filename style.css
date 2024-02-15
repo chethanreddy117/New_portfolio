@@ -54,7 +54,7 @@ header {
 }
 
 .navbar a:hover {
-    color: rgb(166, 255, 0);
+   color: rgb(0, 238, 255);
     scale: 1.5;
 
 }
