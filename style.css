@@ -685,6 +685,10 @@ section{
     font-weight:600;
     margin-bottom:15px;
 }
+.layer a{
+    list-style: none;
+    text-decoration: none;
+}
 .layer p{
     color:rgb(7, 7, 7);
     font-size: 1rem;
