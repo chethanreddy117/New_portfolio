@@ -152,11 +152,12 @@ header {
     box-shadow: 0 0 5px rgb(23, 26, 26)
 }
 .btn-box:hover {
-    box-shadow: 0 0 5px rgb(162, 0, 255), 0 0 25px rgb(0, 102, 255),
+    box-shadow: 0 0 5px rgb(162, 0, 255),
         0 0 50px rgb(200, 2, 250), 0 0 100px rgb(8, 14, 14),
         0 0 200px rgb(0, 4, 255);
-    background-color: black;
-    color: aqua; 
+    background-color:rgb(25, 25, 25);
+    color: white ; 
+     
 }
 .about {
     display: grid;
@@ -178,11 +179,18 @@ header {
     color: aqua;
 }
 .about-text h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 29px;
     font-weight: 600;
     color: #ffff;
     line-height: 1.7;
     margin: 15px 0 30px;
+}
+#profile_pic{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: auto;
 }
 .about-text p {
     color: aliceblue;
@@ -214,14 +222,13 @@ header {
     margin-top: 50px;
 }
 .services-list div {
-    background-color: transparent;
+    background:linear-gradient(45deg,rgb(255, 30, 0),rgb(4, 104, 254)) ;
+    background-repeat: none;
     padding: 40px;
     font-size: 13px;
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
-    box-shadow: 1px 1px 20px rgb(11, 233, 214),
-        1px 1px 40px rgb(73, 73, 206);
 }
 .services-list div h2 {
     font-size: 30px;
@@ -248,7 +255,8 @@ header {
 .read {
     display: inline-block;
     padding: 12px 28px;
-    background: rgb(99, 201, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(29, 28, 28);
     border-radius: 40px;
     font-size: 16px;
     color: rgb(29, 28, 28);
@@ -262,17 +270,17 @@ header {
         0 0 25px rgb(3, 205, 255);
 }
 .read h4 {
-    color: black;
+    color: rgb(99, 201, 226);
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 600;
 }
 
-.read:hover {
+/* .read:hover {
     box-shadow: 0 0 5px rgb(162, 0, 255), 0 0 25px rgb(0, 102, 255),
         0 0 50px rgb(2, 109, 250), 0 0 100px rgb(0, 255, 255),
         0 0 200px rgb(0, 238, 255);
-}
+} */
 .services-list div:hover {
     transform: translateY(-10px);
 }
@@ -626,12 +634,13 @@ section{
 }
 .portfolio-content{
     display:flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 20px;
     grid-template-columns: repeat(auto-fit,minmax(359px,auto));
 }
 .row{
+    display: block;
+    padding: 0px 20px;
     position:relative;
     overflow: hidden;
     border-radius: 8px;
