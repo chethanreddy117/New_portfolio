@@ -1,31 +1,11 @@
 var typed=new Typed(".text",{
-    strings : ["Front-end Developer","Web Designer","UI/UX Designer"],
+    strings : ["Full stack developer","Python developer","Front-end Developer","Web Designer"],
     typeSpeed : 100,
     backSpeed : 100,
     backDelay : 1000,
     loop:true
 });
 
- 
-// emailjs.init("rchethanreddy2001@gmail.com"); // Replace YOUR_USER_ID with your actual EmailJS user ID
-
-// // Function to send the email
-// function sendEmail() {
-//     event.preventDefault(); // Prevent the default form submission
-//     const form = document.getElementById("contact-form");
-//     emailjs.sendForm("service_294qt8v", "template_mhybeeu", form)
-//         .then(function(response) {
-//             console.log("Email sent successfully:", response);
-//             alert("Your message has been sent successfully!");
-//             form.reset(); // Clear the form fields after successful submission
-//         }, function(error) {
-//             console.error("Email sending failed:", error);
-//             alert("Sorry, something went wrong. Please try again later.");
-//         });
-// }
-
-// // Attach the sendEmail function to the form submission event
-// document.getElementById("contact-form").addEventListener("submit", sendEmail);
 let fullname=document.getElementById("name");
 let email_id=document.getElementById("email");
 let message_txt=document.getElementById("message");
@@ -56,6 +36,7 @@ function sendemail(){
         }
     );
 }
+
 function check_inputs(){
     let items=document.querySelectorAll(".contact_style");
     for(let item of items){
@@ -76,6 +57,7 @@ function check_inputs(){
         });
     }
 }
+
 form.addEventListener("submit",function(e){
     e.preventDefault();
     check_inputs();
